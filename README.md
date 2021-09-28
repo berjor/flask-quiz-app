@@ -10,10 +10,10 @@ A quiz web-app based on the Flask Framework
 At the moment of writing, the game application is cloud hosted and can be played on: https://brijnders.pythonanywhere.com/ <br/>
 This quiz game was intended to provide me some experience with using a back-end web framework and web scraping. <br/>
 At every question of the quiz, the Python code employs web scraping to accomodate the user with visual hints (using the beautiful soup tool). <br/>
-For this quiz game I have collected ~3000 questions, mainly on computer science, mathematics, philosophy, languages, neuroscience. 
-Some of the questions were derived from lecture notes. Furthermore, 1500 Chinese Hanzi questions were also included.  
-As such, this project has become a database that brings my otherwise unused lecture notes to life. 
-And it provides a fun way for learning, memorizing or to recap whatever knowledge might be valuable. 
+For this quiz game I have collected ~3000 questions, mainly on computer science, mathematics, philosophy, languages, neuroscience. <br/>
+Some of the questions were derived from lecture notes. Furthermore, 1500 Chinese Hanzi questions were also included.  <br/>
+As such, this project has become a database that brings my otherwise unused lecture notes to life. <br/>
+And it provides a fun way for learning, memorizing or to recap whatever knowledge might be valuable. <br/>
 
 ## Technologies
 Project is created with:
