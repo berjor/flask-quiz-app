@@ -22,3 +22,5 @@ Project is created with:
 * beautifulsoup version: 4.10.0
 
 ## Screenshots
+![alt text](screenshots/selection_screen.jpg "selection screen")
+![alt text](screenshots/question.jpg "example of question (phone sized)")
