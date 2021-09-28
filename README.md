@@ -23,4 +23,4 @@ Project is created with:
 
 ## Screenshots
 <img src="screenshots/selection_screen.jpg" width=70% height=70%>
-<img src="screenshots/question.jpg" width=40% height=40%>
+<img src="screenshots/question.jpg" width=30% height=30%>
