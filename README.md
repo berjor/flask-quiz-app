@@ -22,6 +22,5 @@ Project is created with:
 * beautifulsoup version: 4.10.0
 
 ## Screenshots
-![alt text](screenshots/selection_screen.jpg "selection screen")
-![alt text](screenshots/question.jpg "example of question (phone sized)")
-<img src="screenshots/question.jpg" width=50% height=50%>
+<img src="screenshots/selection_screen.jpg" width=70% height=70%>
+<img src="screenshots/question.jpg" width=40% height=40%>
