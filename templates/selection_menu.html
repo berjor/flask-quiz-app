@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block body %}	
+	<hr>
+
+	<div class="heading1"> 		
+		<center> Welcome </center>
+	</div>
+
+	<br/>
+
+	<div class="standard_text_green_big_bold_italic"> 		
+		<center> <i> {{username}} ! </i> </center>
+	</div>
+
+		<br/>
+		<hr>
+		<br/>
+
+	<div class="heading1"> 
+		SELECT YOUR GAME TYPE:		
+	</div>
+
+	<hr>
+
+	<div class="heading2"> 
+		Game Type 1: Train questions from one category, starting from beginner level
+	</div>
+	
+	<div class="standard_text">
+		You start with a total of 10 lives. After each mistake you make you will lose 1 life and repeat the same question.
+		<br/> You get an extra bonus point (and skip a question) each time you answer 2 consecutive questions correctly.
+	<div>
+
+	<br/>
+  	
+  	<div>
+	  	<form action="/selected_category/presoc_and_plato" method="get">				
+			<input type="submit" value="Presocratics and Plato">
+		</form>
+
+		<form action="/selected_category/aristotle_and_scholastics" method="get">				
+			<input type="submit" value="Aristotle & Scholasticism">
+		</form>
+
+		<form action="/selected_category/islamic_world_hist_and_philosophy" method="get">				
+			<input type="submit" value="Islamic History & Philosophy">
+		</form> 
+
+		<br/>
+		<br/>
+
+		<form action="/selected_category/logic" method="get">		
+			<input type="submit" value="Mathematical Logic">
+		</form>
+
+	  	<form action="/selected_category/maths_linalg" method="get">				
+			<input type="submit" value="Linear Algebra">
+		</form>
+
+		<form action="/selected_category/neuroscience" method="get">				
+			<input type="submit" value="Neuroscience">
+		</form>
+
+		<form action="/selected_category/theoretical_cs" method="get">		
+			<input type="submit" value="Theoretical Computer Science">
+		</form>
+
+		<form action="/selected_category/krr" method="get">		
+			<input type="submit" value="Symbolic Artificial Intelligence">
+		</form>
+
+		<form action="/selected_category/programming_and_os" method="get">		
+			<input type="submit" value="Programming & OS">
+		</form>
+
+		<form action="/selected_category/mechanics" method="get">		
+			<input type="submit" value="Mechanics">
+		</form>
+
+		<br/>
+		<br/>
+
+		<form action="/selected_category/words_tr2" method="get">		
+			<input type="submit" value="Turkish">
+		</form>
+
+		<form action="/selected_category/words_ar" method="get">		
+			<input type="submit" value="Arabic">
+		</form>
+
+		<form action="/selected_category/words_sp" method="get">		
+			<input type="submit" value="Spanish">
+		</form>
+
+		<form action="/selected_category/words_ru" method="get">		
+			<input type="submit" value="Russian">
+		</form>
+
+		<form action="/selected_category/words_ch" method="get">		
+			<input type="submit" value="Chinese (Mandarin)">
+		</form>
+
+		<form action="/selected_category/words_ch_hanzi" method="get">		
+			<input type="submit" value="Chinese (Mandarin) Vocabulary">
+		</form>
+
+		<form action="/selected_category/words_ja" method="get">		
+			<input type="submit" value="Japanese">
+		</form>
+
+	</div>
+
+	<hr>	
+	
+	<div class="heading2"> 
+		Game Type 2: 10 questions of all domains, in all difficulty levels, randomly selected
+	</div>
+
+
+	<div class="standard_text">
+		You will be asked 10 questions, each randomly selected. After each round you will continue only with the questions that were answered incorrectly in the previous round(s). The game will finish after all 10 questions have been answered correctly. However, after each round, the reward (points) for a correctly answered question will be reduced by a factor of 75%. The maximum score is 100 points, which can only be achieved by answering all 10 questions correctly in the first round. 
+	</div>
+
+	<div>
+		<form action="/selected_category/all_questions" method="get">		
+			<input type="submit" value="QUESTIONS OF ALL CATEGORIES">
+		</form>
+	</div>
+
+
+	<div class="standard_text">
+		(Note: this set of questions includes also other question categories, including neuroscience and machine learning. Chinese vocabulary training questions are excluded from this game type.)
+	</div>
+
+	<hr>
+{% endblock %}
