@@ -1,0 +1,141 @@
+
+/* MAIN STYLES: */
+body {
+  background: linear-gradient(rgba(0, 32, 64, 0.1),rgba(32, 72, 32, 0.6)); /* rgb background with 10-60% opacity */ 
+  background-size: cover;   
+}
+
+form {
+    display: inline-block;
+}
+
+.standard_text {
+	color:black;
+	font-style: normal; /* e.g. italic or normal */
+	font-weight: normal;	/* e.g. bold or normal */
+	font-family: "Times New Roman", Times, serif;
+	}
+
+.standard_text_bold {
+	color:black;
+	font-style: normal; /* e.g. italic or normal */
+	font-weight: bold;	/* e.g. bold or normal */
+	font-family: "Times New Roman", Times, serif;
+	}
+
+.standard_text_green {
+	color:green;
+	font-style: normal; /* e.g. italic or normal */
+	font-weight: normal;	/* e.g. bold or normal */
+	font-family: "Times New Roman", Times, serif;
+	}
+
+.standard_text_red {
+	color:red;
+	font-style: normal; /* e.g. italic or normal */
+	font-weight: normal;	/* e.g. bold or normal */
+	font-family: "Times New Roman", Times, serif;
+	}
+
+.standard_text_green_big_bold_italic {
+	color:green;
+	font-style: italic; /* e.g. italic or normal */
+	font-weight: bold;	/* e.g. bold or normal */
+	font-size: 200%;	
+	font-family: "Times New Roman", Times, serif;
+	}
+
+.heading1 {
+	color:blue;
+	font-style: normal; /* e.g. italic or normal */
+	font-weight: bold;	/* e.g. bold or normal */
+	text-transform: uppercase;
+	font-family: "Times New Roman", Times, serif;
+	}
+
+.heading2 {
+	color:green;
+	font-style: italic; /* e.g. italic or normal */
+	font-weight: bold;	/* e.g. bold or normal */
+	font-family: "Times New Roman", Times, serif;
+	}
+
+
+.question {	
+	color:blue;
+	font-style: normal; /* e.g. italic or normal */
+	font-weight: normal;	/* e.g. bold or normal */
+	white-space: pre-wrap;
+	font-family: "Times New Roman", Times, serif;
+	}
+
+.answer {	
+	color:blue;
+	font-style: normal; /* e.g. italic or normal */
+	font-weight: bold;	/* e.g. bold or normal */
+	white-space: normal;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 150%;
+	}
+
+
+/* FOR SLIDESHOW IN THE QUESTION PAGE: */
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade { /* Fading animation */
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+/* FOR MENUBAR ON TOP OF SCREEN (not all used): */
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;  }
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 0; }
+#nav li {
+	float: left; }
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	border-right: 1px solid #ccc; }
+#nav li:first-child a {
+	border-left: 1px solid #ccc; }
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; }
