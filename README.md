@@ -17,7 +17,7 @@ And it provides a fun way for learning, memorizing or to recap whatever knowledg
 
 ## Technologies
 Project is created with:
-* Python version: 3.6.9
+* Python version: 3.9.5
 * Flask version: 2.0.1
 * beautifulsoup version: 4.10.0
 
