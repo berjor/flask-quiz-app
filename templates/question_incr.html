@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	<div class="standard_text">
+		Your current score: {{ i-1 }}/{{question_amount}}.
+	</div>
+
+	<div>
+		<meter style="float:left;" value={{i}} min=0 low=.33*{{question_amount}} high=0.67*{{question_amount}} max= {{question_amount}} > </meter>
+	</div>
+
+    <br/>
+
+	<div class="standard_text">
+		Life indicator:	Lives left: {{ lives_left}}.
+	</div>
+
+	<div>
+		<meter style="float:left;" value={{lives_left}} min=0 low=.33*{{lives_left}} high=0.67*{{lives_left}} max= {{max_lives}} > </meter>
+	<div>
+
+	<div class="standard_text">
+		<br>Question {{i}} / {{question_amount}}:
+	</div>
+
+	<div class="question">
+		<br>{{question}}
+	</div>
+
+	<br/>
+
+	<div>
+		<form action={{answer_link}} method="get">
+			<input autocomplete="off" placeholder="type your answer" name="response" type="text" autofocus>
+			<input type="submit">
+		</form>
+	</div>
+
+	<div class="standard_text">
+		Hints from google:
+	</div>
+
+
+	{% if hint_button == 'on' %}
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<img src={{urls[0]}} height=200 width=auto>
+			</div>
+
+			<div class="mySlides fade">
+				<img src={{urls[1]}} height=200 width=auto>
+			</div>
+
+			<div class="mySlides fade">
+				<img src={{urls[2]}} height=200 width=auto>
+			</div>
+
+			<div class="mySlides fade">
+				<img src={{urls[3]}} height=200 width=auto>
+			</div>
+
+			<div class="mySlides fade">
+				<img src={{urls[4]}} height=200 width=auto>
+			</div>
+
+			<div class="mySlides fade">
+				<img src={{urls[5]}} height=200 width=auto>
+			</div>
+
+			<div class="mySlides fade">
+				<img src={{urls[6]}} height=200 width=auto>
+			</div>
+
+			<div class="mySlides fade">
+				<img src={{urls[7]}} height=200 width=auto>
+			</div>
+
+			<div class="mySlides fade">
+				<img src={{urls[8]}} height=200 width=auto>
+			</div>
+
+			<div class="mySlides fade">
+				<img src={{urls[9]}} height=200 width=auto>
+			</div>
+		</div>
+
+		<form action="{{question_link}}" method="get">
+			<input type="hidden" name="hint_button_set" value="off">
+			<button type="submit" style="background-color: #ffcccb; float:right;"> TURN HINTS OFF </button>
+		</form>
+
+	{% else %}
+	    <br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<form action="{{question_link}}" method="get">
+			<input type="hidden" name="hint_button_set" value="on">
+			<button type="submit" style="background-color: lightgreen; float:center;"> TURN HINTS ON </button>
+		</form>
+	{% endif %}
+
+
+	<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";
+	  }
+	  slideIndex++;
+	  slides[slideIndex-1].style.display = "block";
+	  setTimeout(showSlides, 10000); // Change image every 5 seconds
+	}
+	</script>
+
+	<br/>
+	<br/>
+
+	<hr>
+
+    <div class="standard_text_bold">
+		Your highest score previously: {{highest_user_score}}/{{question_amount}}. <br>Overall high score: {{ high_score }}/{{question_amount}} by user: {{ high_score_username }}.
+	</div>
+
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
+	<hr>
+{% endblock %}

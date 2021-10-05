@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	<div class=standard_text>
+		Your intermediate score is:
+	</div>
+
+	<br/>
+
+	<div class=standard_text_bold>
+ 		{{ score_rounded }} out of 100
+ 	</div>
+
+	<br/>
+
+	<div class=standard_text>
+		To increase your score: press the following button to continue with the questions you answered incorrectly:
+	</div>
+
+	<div>
+		<form action=/question/1 method="get">
+			<input type="submit" value="continue with incorrect questions" name="button" type="text" autofocus>
+		</form>
+	</div>
+
+	<br/>
+
+	<div class=standard_text>
+		Note that during the next round each correctly answered question will be rewarded with {{reward_rounded}} points.
+		<br/> <br/> Or if you'd like to quit, press the following button to go back to selection menu to start a new game:
+
+	<div>
+		<form action=/ method="get">
+			<input type="submit" value="back to main menu" name="button" type="text">
+		</form>
+	</div>
+
+	<hr>
+{% endblock %}
+

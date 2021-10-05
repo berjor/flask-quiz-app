@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="initial-scale=1, width=device-width">
+		<title>quiz: {{username}}</title>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='stylesheet.css') }}">
+	</head>
+
+
+	<body>
+
+		<div>
+			<img src={{ url_for('static', filename='ephesus_vanilla.jpg')}} height=50 width=100%>
+		</div>
+
+		<div id="nav">
+			<ul>
+				<li><a href={{home_ref}}>New Game</a></li>
+				<li><a href="/about/">About</a></li>
+			</ul>
+		</div>
+
+
+		<br/>
+
+		{% block body %}
+		{% endblock %}
+
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		<div>
+			<img src={{ url_for('static', filename='ephesus_vanilla.jpg')}} height=50 width=100%>
+		</div>
+
+
+		<footer>
+	    	<br/> Created by Berjo Rijnders in 2021 </br>
+		</footer>
+
+	</body>
+
+	{% if loop == True %} <!-- Loops the sound files (music); only for in main menu screen-->
+		<audio autoplay src={{ url_for('static', filename= sound_sample ) }} type="audio/mpeg" loop> </audio>
+	{% else %} <!-- No looping of sound files; for all other screens -->
+		<audio autoplay src={{ url_for('static', filename= sound_sample ) }} type="audio/mpeg"> </audio>
+	{% endif %}
+
+</html>

@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	<div class="standard_tex"t">
+		Question {{i}} / {{question_amount}}:
+	</div> 		
+
+	<div class="question"> 
+		<br>{{question}}
+	</div>
+
+	<br/>  
+	
+	<div class="standard_text">
+	 	You answered: {{response}} 
+	</div>
+
+	<div class="standard_text_red"> 
+		YOUR ANSWER WAS INCORRECT! 
+	</div> 
+
+	<div class="standard_text"> 
+	 	The correct answer was:   
+	</div>
+
+	<div class="answer">
+		<br>{{questions[i-1][1]}}			
+	</div>	
+
+	<hr>
+
+	<br/>  
+
+	<div>
+		<form action={{next_question}} method="get">	
+			<input type="submit" autofocus type="text" value="Continue with next question">
+		</form>
+	</div>	
+
+	<hr>
+{% endblock %}
+
